@@ -1,5 +1,4 @@
-import {Navbar, Container, Nav} from "react-bootstrap"
-
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 const MyNav = () => {
   return (
@@ -7,9 +6,14 @@ const MyNav = () => {
       <Container>
         <Navbar.Brand href="#home">Space News</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Nav.Link href="#news">News</Nav.Link>
+          <Nav.Link href="#opinion">Opinion</Nav.Link>
+          <Nav.Link href="#civil">Civil</Nav.Link>
+          <Nav.Link href="#commercial">Commercial</Nav.Link>
+          <Nav.Link href="#military">Military</Nav.Link>
+          <Nav.Link href="#sponsored">Sponsored</Nav.Link>
+          <Nav.Link href="#morecategories">More Categories</Nav.Link>
+          <Nav.Link href="#advertise">Advertise</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

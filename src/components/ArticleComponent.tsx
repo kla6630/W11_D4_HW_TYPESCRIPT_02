@@ -1,5 +1,6 @@
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { IArticle } from "../interfaces/IArticle";
+import { Link } from "react-router-dom";
 
 interface ArticleComponentProps {
   article: IArticle;
@@ -13,9 +14,7 @@ const ArticleComponent = ({ article }: ArticleComponentProps) => {
         <Card.Title>{article.title}</Card.Title>
         <Card.Text>{article.summary}</Card.Text>
 
-        <Button variant="primary" onClick={() => article.title}>
-          {article.updatedAt}
-        </Button>
+        <Link to={`/ArticleDetails/${article.id}`}>button</Link>
       </Card.Body>
     </Card>
   );
